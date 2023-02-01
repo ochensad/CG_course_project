@@ -1,0 +1,23 @@
+\documentclass[utf8x, 12pt]{style/G7-32}
+
+\include{style/preambule.inc}
+\include{style/listings.inc}
+
+
+\begin{document}
+
+
+\includepdf[pages=-]{task.pdf}
+\setcounter{page}{3}
+\renewcommand{\contentsname}{Содержание} % Переименовать table of contents
+\tableofcontents
+\input{1_introduction.tex}
+\input{2_analytical.tex}
+\input{3_design.tex}
+\input{4_technological.tex}
+\input{5_research.tex}
+\input{6_conclusion.tex}
+\input{7_biblio.tex}
+\includepdf[pages=-, angle=90]{prez.pdf}
+
+\end{document}
